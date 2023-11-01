@@ -1,0 +1,17 @@
+@use "sass:math";
+
+@function size($size-in-px) {
+  @return math.div($size-in-px, $fz-default) * 1rem;
+}
+
+@function size-desktop($size-in-px) {
+  @return math.div($size-in-px, $vp-1366) * 100vw;
+}
+
+@function size-tablet($size-in-px) {
+  @return math.div($size-in-px, $vp-768) * 100vw;
+}
+
+@function size-mobile($size-in-px) {
+  @return math.div($size-in-px, $vp-320) * 100vw;
+}

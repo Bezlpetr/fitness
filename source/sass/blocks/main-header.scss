@@ -1,14 +1,14 @@
 .main-header {
-  padding-bottom: 120px;
+  padding-bottom: size(120px);
 
   background: $gradient-hero;
 
   @include vp-1365 {
-    padding-bottom: 100px;
+    padding-bottom: size(100px);
   }
 
   @include vp-767 {
-    padding-bottom: 70px;
+    padding-bottom: size(70px);
   }
 }
 
@@ -16,83 +16,83 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: size(20px) 0;
 
   @include vp-767 {
-    padding: 10px 0;
-    margin-bottom: 35px;
+    padding: size(10px) 0;
+    margin-bottom: size(35px);
   }
 }
 
 .main-header__address-phone {
   display: block;
-  padding: 9px;
-  margin-right: -10px;
+  padding: size(9px);
+  margin-right: size(-10px);
 
-  font-size: 26px;
+  font-size: size(26px);
   font-weight: 700;
-  line-height: 26px;
+  line-height: size(26px);
   font-style: normal;
   color: $color-default-white;
 
-  border: 1px solid  $color-transparent;
+  border: size(1px) solid  $color-transparent;
 
   @include vp-1365 {
-    font-size: 24px;
-    line-height: 24px;
+    font-size: size(24px);
+    line-height: size(24px);
   }
 
   @include vp-767 {
-    padding: 5px;
-    margin-right: -6px;
+    padding: size(5px);
+    margin-right: size(-6px);
 
-    font-size: 22px;
-    line-height: 22px;
+    font-size: size(22px);
+    line-height: size(22px);
   }
 
   @include hover-focus {
-    border: 1px solid  $color-default-white;
+    border: size(1px) solid  $color-default-white;
     outline: none;
   }
 
   @include active {
     text-decoration: underline;
 
-    border: 1px solid  $color-transparent;
+    border: size(1px) solid  $color-transparent;
   }
 }
 
 .main-header__logo-link {
   display: block;
-  padding: 10px;
+  padding: size(10px);
 
-  margin-left: -10px;
-
-  @include vp-767 {
-    padding: 6px;
-
-    margin-left: -6px;
-  }
-}
-
-.main-header__logo-link-image-wrapper {
-  width: 118px;
+  margin-left: size(-10px);
 
   background-color: $color-resolution-blue;
 
+  @include vp-767 {
+    padding: size(6px);
+
+    margin-left: size(-6px);
+  }
+}
+
+.main-header__logo-link-image-wrapper img{
+  width: size(118px);
+
   @include vp-1365 {
-    width: 108px;
+    width: size(108px);
   }
 
   @include vp-767 {
-    width: 100px;
-    height: 22px;
+    width: size(100px);
+    height: size(22px);
   }
 }
 
 .main-header__hero-wrapper {
   display: flex;
-  width: 82.327%; //955px от 1366px-103px*2
+  width: size(955px); //82.327%; //955px от 1366px-103px*2
   align-items: center;
 
   @include vp-1365 {
@@ -110,14 +110,14 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  width: 40.314%; //385 от 955px
-  margin-right: 70px;
-  padding-left: 115px;
+  width: size(385px);//40.314%; //385px от 955px
+  margin-right: size(70px);
+  padding-left: size(115px);
 
   @include vp-1365 {
-    width: 47.7876%; //324px от 678px(768px - 45px*2)
-    margin-right: 30px;
-    padding-left: 139px;
+    width: size(324px); //47.7876%; //324px от 678px(768px - 45px*2)
+    margin-right: size(30px);
+    padding-left: size(139px);
   }
 
   @include vp-767 {
@@ -127,7 +127,7 @@
     "list city"
     "list title"
     "btn btn";
-    grid-template-columns: 128px auto;
+    grid-template-columns: size(128px) auto;
     margin-right: 0;
     padding-left: 0;
   }
@@ -137,20 +137,20 @@
   order: 2;
 
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: size(50px);
 
   font-family: "Alumni Sans", "Arial", sans-serif;
-  font-size: 92px;
+  font-size: size(92px);
   font-weight: 800;
-  line-height: 110px;
-  letter-spacing: 4.6px;
+  line-height: size(110px);
+  letter-spacing: size(4.6px);
   text-transform: uppercase;
   text-align: right;
   color: $color-default-white;
 
   @include vp-1365 {
-    font-size: 72px;
-    line-height: 85px;
+    font-size: size(72px);
+    line-height: size(85px);
     letter-spacing: normal;
   }
 
@@ -158,37 +158,37 @@
     grid-area: title;
     margin-bottom: 0;
 
-    font-size: 67px;
-    line-height: 70px;
+    font-size: size(67px);
+    line-height: size(70px);
   }
 }
 
 .main-header__hero-city {
   order: 1;
 
-  margin-bottom: 10px;
+  margin-bottom: size(10px);
 
   font-family: "Alumni Sans", "Arial", sans-serif;
-  font-size: 54px;
+  font-size: size(54px);
   font-weight: 600;
-  line-height: 54px;
-  letter-spacing: 1.62px;
+  line-height: size(54px);
+  letter-spacing: size(1.62px);
   text-transform: uppercase;
   color: $color-default-white;
 
   @include vp-1365 {
-    font-size: 42px;
-    line-height: 42px;
-    letter-spacing: 1.26px;
+    font-size: size(42px);
+    line-height: size(42px);
+    letter-spacing: size(1.26px);
   }
 
   @include vp-767 {
     grid-area: city;
-    margin-bottom: 14px;
+    margin-bottom: size(14px);
 
-    font-size: 32px;
-    line-height: 32px;
-    letter-spacing: 0.96px;
+    font-size: size(32px);
+    line-height: size(32px);
+    letter-spacing: size(0.96px);
     text-align: right;
   }
 }
@@ -211,19 +211,19 @@
     transform: none;
 
     grid-area: list;
-    padding-right: 15px;
+    padding-right: size(15px);
   }
 }
 
 .main-header__hero-item {
-  font-size: 14px;
+  font-size: size(14px);
   font-style: normal;
   font-weight: 400;
-  line-height: 22px;
+  line-height: size(22px);
   color:  $color-default-white;
 
   @include vp-767 {
-    line-height: 20px;
+    line-height: size(20px);
   }
 }
 
@@ -233,21 +233,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 27px 56px;
+  padding: size(27px) size(56px);
 
-  font-size: 12px;
+  font-size: size(12px);
   font-weight: 700;
-  line-height: 12px;
-  letter-spacing: 0.6px;
+  line-height: size(12px);
+  letter-spacing: size(0.6px);
   text-transform: uppercase;
   color: $color-default-white;
 
-  border: 2px solid $color-default-white;
+  border: size(2px) solid $color-default-white;
 
   @include vp-1365 {
     width: 100%;
-    max-width: 325px;
-    padding: 22px;
+    // max-width: 325px;
+    padding: size(22px);
 
     font-weight: 400;
   }
@@ -256,8 +256,8 @@
     grid-area: btn;
     width: 100%;
     max-width: none;
-    padding: 20px;
-    margin-top: 60px;
+    padding: size(20px);
+    margin-top: size(60px);
 
     font-weight: 700;
   }
@@ -284,11 +284,11 @@
   }
 }
 
-.main-header__hero-image-wrapper {
-  width: 52.356%; //500px от 955px
+.main-header__hero-image-wrapper img {
+  width: size(500px); //52.356%; //500px от 955px
 
   @include vp-1365 {
-    width: 47.7876%; //324px от 678px(768px - 45px*2)
+    width: size(324px); //47.7876%; //324px от 678px(768px - 45px*2)
   }
 
   @include vp-767 {

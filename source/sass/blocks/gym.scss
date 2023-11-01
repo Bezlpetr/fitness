@@ -1,0 +1,50 @@
+.gym {
+  padding: size(120px) 0;
+}
+
+.gym__title {
+  margin: 0;
+  margin-bottom: size(25px);
+
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: size(54px);
+  font-weight: 600;
+  line-height: size(54px);
+  letter-spacing: size(1.62px);
+}
+
+.gym__subtitle {
+  display: block;
+  margin-bottom: size(95px);
+
+  font-size: size(22px);
+  font-weight: 400;
+  line-height: size(22px);
+}
+
+.gym__description-wrapper {
+
+  &--first {
+    margin-bottom: size(8px);
+  }
+
+  & > p {
+    margin: 0;
+  }
+
+  & > p:not(:last-child) {
+    margin-bottom: size(8px);
+  }
+}
+
+.gym__video-wrapper img {
+  width: size(364px);
+  height: size(228px);
+}
+
+.gym__video-wrapper iframe {
+  max-width: 100%;
+  width: size(364px);
+  height: size(228px);
+}
+

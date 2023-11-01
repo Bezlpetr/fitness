@@ -1,12 +1,12 @@
 .btn {
   display: inline-flex;
-  padding: 27px;
+  padding: size(27px);
 
   // font-family: $ff-placeholder;
   color: $color-sapphire;
 
   background-color: inherit;
-  border: 1px solid $color-sapphire;
+  border: size(1px) solid $color-sapphire;
   cursor: pointer;
   user-select: none;
 
