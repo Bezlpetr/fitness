@@ -4,17 +4,83 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Описание проекта">
-    <title>ProjectName</title>
+    <meta name="description" content="SuperGym - самый большой 💪фитнес-центр за Уралом площадью 900 кв/м. всего за 😳4999 рублей в год. ✅Тренажерный зал, ✅Кардио-зона, ✅Групповые занятия, ✅Корпоративные скидки, ✅Собственная парковка.">
+    <title>Фитнес-центр SuperGym в Омске стоимостью всего за 4999 в год</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="./fonts/alumni-sans-v18-cyrillic_latin-600.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/alumni-sans-v18-cyrillic_latin-800.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/roboto-condensed-v27-cyrillic_latin-300.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/roboto-condensed-v27-cyrillic_latin-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/roboto-condensed-v27-cyrillic_latin-700.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <div class="container"></div>
+      <header class="main-header">
+        <div class="container">
+          <div class="main-header__logo-phone-wrapper">
+            <a class="main-header__logo-link">
+              <div class="main-header__logo-link-image-wrapper">
+                <img src="./img/svg/logo.svg" alt="Логотип фитнес-центра SuperGym">
+              </div>
+            </a>
+            <address class="main-header__address">
+              <a class="main-header__address-phone" href="tel:+78005555555">8-800-555-55-55</a>
+            </address>
+          </div>
+          <div class="main-header__hero-wrapper">
+            <div class="main-header__hero-info-wrapper">
+              <h1 class="main-header__hero-title">Фитнес центр</h1>
+              <span class="main-header__hero-city">Омск</span>
+              <ul class="main-header__hero-list">
+                <li class="main-header__hero-item">Тренажёрный зал</li>
+                <li class="main-header__hero-item">Групповые занятия</li>
+                <li class="main-header__hero-item">Кардио-зона</li>
+              </ul>
+              <a class="main-header__hero-button btn" href="#">Купить абонемент</a>
+            </div>
+            <div class="main-header__hero-image-wrapper">
+              <picture>
+                <source type="image/webp" media="(max-width: 1365px)"
+                  srcset="./img/hero-tablet.webp 1x, ./img/hero-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="./img/hero-desktop.webp 1x, ./img/hero-desktop@2x.webp 2x">
+                <source type="image/jpeg" media="(max-width: 1365px)"
+                  srcset="./img/hero-tablet.jpg 1x, ./img/hero-tablet@2x.jpg 2x">
+                <img src="./img/hero-desktop.jpg" srcset="./img/hero-desktop@2x.jpg 2x" width="500" height="524" alt="">
+              </picture>
+            </div>
+          </div>
+        </div>
       </header>
       <main>
-        <section class="intro">
+        <section class="gym">
+          <h2 class="gym__title">Тренажерный зал</h2>
+          <span class="gym__subtitle">Просторный зал площадью 900 кв/м</span>
+          <div class="gym__description-wrapper gym__description-wrapper--first">
+            <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+          </div>
+          <div class="gym__description-wrapper gym__description-wrapper--second">
+            <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий. </p>
+          </div>
+          <div class="gym__image-wrapper">
+            <picture>
+              <source type="image/webp" media="(max-width: 1365px)"
+                srcset="./img/hero-tablet.webp 1x, ./img/hero-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="./img/hero-desktop.webp 1x, ./img/hero-desktop@2x.webp 2x">
+              <source type="image/jpeg" media="(max-width: 767px)"
+                srcset="./img/gym-tablet.jpg 1x, ./img/gym-tablet@2x.jpg 2x">
+              <source type="image/jpeg" media="(max-width: 1365px)"
+                srcset="./img/gym-tablet.jpg 1x, ./img/gym-tablet@2x.jpg 2x">
+              <img src="./img/gym-desktop.jpg" srcset="./img/gym-desktop@2x.jpg 2x" width="678" height="345" alt="Фото тренажерного зала">
+            </picture>
+          </div>
+          <div class="gym__video-wrapper">
+            <iframe src="" frameborder="0"></iframe>
+          </div>
+        </section>
+        <!-- <section class="intro">
           <div class="container">
             <h1>Тестовая страница.</h1>
             <p>На данной странице показан пример модальных окон.</p>
@@ -22,14 +88,14 @@
             <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
             <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
           </div>
-        </section>
+        </section> -->
       </main>
       <footer>
         <div class="container"></div>
       </footer>
     </div>
 
-    <!-- Модалки -->
+    <!-- Модалки
     <div class="modal modal--preload" data-modal="feedback">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
@@ -42,9 +108,9 @@
           </button>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
+    <!-- <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
@@ -56,7 +122,7 @@
           </button>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
