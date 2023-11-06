@@ -225,6 +225,7 @@
   border-radius: 50%;
   border: size(2px) solid $color-torch-red-opacity20;
   background-color: $color-transparent;
+  cursor: pointer;
 
   @include vp-1365 {
     width: size(72px);
@@ -242,7 +243,7 @@
     width: size(72px);
     height: size(72px);
 
-    background-image: $gradient-video-button;
+    background-image: $gradient-button;
     border-radius: 50%;
 
     @include vp-1365 {

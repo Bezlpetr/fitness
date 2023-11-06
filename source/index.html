@@ -25,7 +25,7 @@
               </div>
             </a>
             <address class="main-header__address">
-              <a class="main-header__address-phone" href="tel:+78005555555">8-800-555-55-55</a>
+              <a class="main-header__address-phone " href="tel:+78005555555">8-800-555-55-55</a>
             </address>
           </div>
           <div class="main-header__hero-wrapper">
@@ -37,7 +37,7 @@
                 <li class="main-header__hero-item">Групповые занятия</li>
                 <li class="main-header__hero-item">Кардио-зона</li>
               </ul>
-              <a class="main-header__hero-button btn" href="#">Купить абонемент</a>
+              <a class="main-header__hero-button btn" href="#price">Купить абонемент</a>
             </div>
             <div class="main-header__hero-image-wrapper">
               <picture>
@@ -91,8 +91,81 @@
                 </svg>
               </button>
               <div class="gym__video">
-                <!-- сюда вбудет добавлен iframe с видео -->
+                <!-- сюда будет добавлен iframe с видео -->
               </div>
+            </div>
+          </div>
+        </section>
+        <section class="price" id="price">
+          <div class="container price__container">
+            <h2 class="price__title">Абонементы</h2>
+            <ul class="price__months-list">
+              <li class="price__months-item">
+                <button class="price__month-button is-active" type="button" data-months-count="one-month">1 месяц</button>
+              </li>
+              <li class="price__months-item">
+                <button class="price__month-button" type="button" data-months-count="six-months">6 месяцев</button>
+              </li>
+              <li class="price__months-item">
+                <button class="price__month-button" type="button" data-months-count="twelve-months">12 месяцев</button>
+              </li>
+            </ul>
+            <ul class="price__cards-list">
+              <li class="price__card-item">
+                <article class="price__card card">
+                  <div class="card__wrapper">
+                    <h3 class="card__title">С тренером</h3>
+                    <h4 class="card__subtitle">12 занятий</h4>
+                    <span class="card__price" data-price-one-month="5000" data-price-six-months="30000" data-price-twelve-months="60000">
+                        5000
+                      <svg width="30" height="42">
+                          <use href="./img/sprite.svg#ruble-icon"></use>
+                      </svg>
+                    </span>
+                    <span class="card__price-shadow">5000</span>
+                    <a class="card__button btn" href="#" aria-label="Купить абонемент на 12 занятий с тренером за 5000">Купить абонемент</a>
+                  </div>
+                </article>
+              </li>
+              <li class="price__card-item">
+                <article class="price__card card is-active ">
+                  <div class="card__wrapper">
+                    <h3 class="card__title">Дневной</h3>
+                    <h4 class="card__subtitle">с 8:00 до 17:00</h4>
+                    <span class="card__price" data-price-one-month="1700" data-price-six-months="10200" data-price-twelve-months="20400">
+                      1700
+                      <svg class="card__ruble-icon" width="30" height="42">
+                        <use href="./img/sprite.svg#ruble-icon"></use>
+                      </svg>
+                    </span>
+                    <span class="card__price-shadow">1700</span>
+                    <a class="card__button btn " href="#" aria-label="Купить дневной абонемент с 8:00 до 17:00 за 1700" tabindex="-1">Купить абонемент</a>
+                  </div>
+                </article>
+              </li>
+              <li class="price__card-item">
+                <article class="price__card card">
+                  <div class="card__wrapper">
+                    <h3 class="card__title">Полный день</h3>
+                    <h4 class="card__subtitle">с 8:00 до 22:00</h4>
+                    <span class="card__price" data-price-one-month="2700" data-price-six-months="16200" data-price-twelve-months="32400">
+                      2700
+                      <svg class="card__ruble-icon" width="30" height="42">
+                        <use href="./img/sprite.svg#ruble-icon"></use>
+                      </svg>
+                    </span>
+                    <span class="card__price-shadow">2700</span>
+                    <a class="card__button btn " href="#" aria-label="Купить абонемент на полный день с 8:00 до 22:00 за 2700">Купить абонемент</a>
+                  </div>
+                </article>
+              </li>
+            </ul>
+            <div class="price__sticker-image-wrapper">
+              <picture>
+                <source type="image/webp"
+                  srcset="./img/plates.webp 1x, ./img/plates@2x.webp 2x">
+                <img src="./img/plates.png" srcset="./img/plates@2x.png 2x" width="321" height="384" alt="">
+              </picture>
             </div>
           </div>
         </section>

@@ -1,7 +1,9 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
+// import {initTabs} from './modules/tabs/init-tabs';
 import {Form} from './modules/form-validate/form';
 import {setVideoPlayButtonListener} from './modules/video/video';
+import {setPriceButtonsListener, setCardsListener} from './modules/price/price';
 
 // ---------------------------------
 
@@ -15,6 +17,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   // ---------------------------------
   setVideoPlayButtonListener();
+  setPriceButtonsListener();
+  setCardsListener();
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {

@@ -50,15 +50,25 @@
     line-height: size(22px);
   }
 
-  @include hover-focus {
-    border: size(1px) solid  $color-default-white;
-    outline: none;
+  &:not(.main-header__address-phone--disabled) {
+    @include hover-focus {
+      color: $color-resolution-blue;
+      outline: none;
+    }
+
+    @include active {
+      color: $color-sapphire;
+      text-decoration: underline;
+
+      border: size(1px) solid  $color-transparent;
+    }
   }
 
-  @include active {
-    text-decoration: underline;
+  &--disabled {
+    color: $color-ghost-white;
 
-    border: size(1px) solid  $color-transparent;
+    opacity: 0.5;
+    cursor: default;
   }
 }
 
@@ -246,7 +256,6 @@
 
   @include vp-1365 {
     width: 100%;
-    // max-width: 325px;
     padding: size(22px);
 
     font-weight: 400;
