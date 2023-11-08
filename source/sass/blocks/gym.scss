@@ -124,6 +124,8 @@
 }
 
 .gym__image-wrapper {
+  background-color: $color-whisper;
+
   @include vp-767 {
     margin-bottom: size(40px);
   }

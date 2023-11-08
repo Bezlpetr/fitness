@@ -1,0 +1,369 @@
+.games {
+  padding: size(120px) 0;
+
+  @include vp-1365 {
+    padding: size(100px) 0;
+  }
+
+  @include vp-767 {
+    padding: size(70px) 0;
+  }
+}
+
+.games__promo-wrapper {
+  display: flex;
+  margin-bottom: size(120px);
+
+  @include vp-1365 {
+    margin-bottom: size(100px);
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+    margin-bottom: size(70px);
+  }
+}
+
+.games__promo-info-wrapper {
+  display: grid;
+  grid-template-areas:
+  "title beginning"
+  "description description"
+  "button button";
+  width: size(500px);
+  padding: size(80px);
+
+  color: $color-default-white;
+
+  background-color: $color-torch-red;
+
+  @include vp-1365 {
+    width: size(292px);
+    padding: size(38px) size(45px) size(45px);
+  }
+
+  @include vp-767 {
+    width: 100%;
+    padding: size(40px);
+  }
+}
+
+.games__title {
+  margin: 0;
+  grid-area: title;
+
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: size(82px);
+  font-weight: 600;
+  line-height: size(76px);
+  letter-spacing: size(2.46px);
+  text-transform: uppercase;
+
+  @include vp-1365 {
+    font-size: size(48px);
+    line-height: size(46px);
+    letter-spacing: size(1.44px);
+
+    margin-right: size(40px);
+  }
+
+  @include vp-767 {
+    margin-right: size(37px);
+  }
+}
+
+.games__description {
+  grid-area: description;
+  margin: 0;
+  margin-bottom: size(55px);
+
+  font-size: size(18px);
+
+  @include vp-1365 {
+    margin-bottom: size(21px);
+  }
+
+  @include vp-767 {
+    padding-right: size(39px);
+    margin-bottom: size(20px);
+
+    font-size: size(16px);
+    line-height: size(20px);
+  }
+}
+
+.games__beginning-list {
+  grid-area: beginning;
+  margin: 0;
+  margin-bottom: size(23px);
+
+  @include vp-1365 {
+    margin-bottom: size(6px);
+  }
+
+  @include vp-767 {
+    margin-bottom: size(13px);
+  }
+}
+
+.games__beginning-title {
+  font-size: size(18px);
+  margin-bottom: size(12px);
+
+  @include vp-1365 {
+    margin-bottom: size(3px);
+  }
+
+  @include vp-767 {
+    margin-bottom: size(3px);
+
+    font-size: size(16px);
+    line-height: size(20px);
+  }
+}
+
+.games__beginning-definition {
+  position: relative;
+
+  margin: 0;
+
+  font-size: size(40px);
+  font-weight: 700;
+  line-height: size(40px);
+
+  @include vp-1365 {
+    font-size: size(24px);
+    line-height: size(24px);
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: size(-5px);
+    left: 0;
+    right: 0;
+
+    width: 100%;
+    height: size(1px);
+
+    background-color: $color-default-white;
+
+    @include vp-1365 {
+      top: size(-3px);
+    }
+  }
+}
+
+.games_beginning-date-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: size(20px);
+
+  @include vp-1365 {
+    margin-bottom: size(8px);
+  }
+
+  @include vp-767 {
+    margin-bottom: size(6px);
+  }
+}
+
+.games__button {
+  grid-area: button;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: size(25px);
+
+  font-size: size(12px);
+  font-weight: 700;
+  line-height: size(12px);
+  letter-spacing: size(0.6px);
+  text-transform: uppercase;
+  color: $color-default-white;
+
+  border: size(2px) solid $color-default-white;
+
+  @include vp-1365 {
+    padding: size(20px);
+  }
+
+  &:not(.games__button--disabled) {
+    @include hover-focus {
+      color: $color-egyptian-blue;
+
+      background-color: $color-default-white;
+      outline: none;
+    }
+
+    @include active {
+      color: $color-sapphire;
+    }
+  }
+
+  &--disabled {
+    color: $color-default-white;
+
+    background-color: $color-transparent;
+    opacity: 0.5;
+    cursor: default;
+  }
+}
+
+.games__promo-image-wrapper {
+  background-color: $color-sapphire;
+}
+
+.games__promo-image-wrapper img {
+  width: size(660px);
+  height: size(500px);
+
+  object-fit: cover;
+
+  @include vp-1365 {
+    width: size(386px);
+    height: size(324px);
+  }
+
+  @include vp-767 {
+    width: size(290px);
+    height: size(292px);
+  }
+}
+
+.games__subtitle {
+  margin: 0;
+  margin-bottom: size(45px);
+
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: size(54px);
+  font-weight: 600;
+  line-height: size(54px);
+  letter-spacing: size(1.62px);
+
+  @include vp-1365 {
+    margin-bottom: size(40px);
+
+    font-size: size(42px);
+    line-height: size(42px);
+    letter-spacing: size(1.26px);
+    text-align: center;
+  }
+
+  @include vp-767 {
+    margin-bottom: size(42px);
+
+    font-size: size(32px);
+    line-height: size(32px);
+    letter-spacing: size(0.96px);
+  }
+}
+
+.games__slider-wrapper {
+  position: relative;
+}
+
+.games__jury-slider {
+  width: size(1160px);
+
+  @include vp-1365 {
+    width: size(568px);
+  }
+
+  @include vp-767 {
+    width: size(226px);
+  }
+}
+
+.games__jury-list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.games__jury-slider-button {
+  position: absolute;
+  top: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: size(56px);
+  height: size(56px);
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+  color: $color-sapphire;
+
+  background-color: $color-transparent;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+
+  @include vp-767 {
+    width: size(34px);
+    height: size(34px);
+  }
+
+  &--prev {
+    left: size(-76px);
+    transform: translateY(-50%);
+
+    @include vp-1365 {
+      left: size(-20px);
+    }
+
+    @include vp-767 {
+      left: size(-10px);
+    }
+  }
+
+  &--next {
+    right: size(-76px);
+    transform: rotate(180deg) translateY(50%);
+
+    @include vp-1365 {
+      right: size(-20px);
+    }
+
+    @include vp-767 {
+      right: size(-10px);
+    }
+  }
+
+  &:not(:disabled){
+    @include hover-focus {
+    border: size(1px) solid $color-sapphire;
+    outline: none;
+    }
+
+  @include active {
+    color: $color-default-white;
+
+    background-color: $color-sapphire;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    cursor: default;
+  }
+
+  &::after {
+    display: none;
+  }
+}
+
+.games__jury-slider-button-icon {
+  display: block;
+  width: size(16px);
+  height: size(32px);
+
+  @include vp-767 {
+    width: size(10px);
+    height: size(19px);
+  }
+}

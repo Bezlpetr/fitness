@@ -1,0 +1,43 @@
+.date {
+  display: grid;
+  grid-template-areas:
+  "number month"
+  "number year";
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.date-number {
+  grid-area: number;
+  margin-right: size(6px);
+
+  @include vp-1365 {
+    margin-right: size(3px);
+  }
+}
+
+.date-month {
+  grid-area: month;
+
+  font-size: size(14px);
+  font-weight: 400;
+  line-height: size(14px);
+
+  @include vp-1365 {
+    font-size: size(10px);
+    line-height: size(10px);
+  }
+}
+
+.date-year {
+  grid-area: year;
+
+  font-size: size(14px);
+  font-weight: 400;
+  line-height: size(14px);
+
+  @include vp-1365 {
+    font-size: size(10px);
+    line-height: size(10px);
+  }
+}
