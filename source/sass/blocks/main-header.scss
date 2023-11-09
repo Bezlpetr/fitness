@@ -102,7 +102,7 @@
 
 .main-header__hero-wrapper {
   display: flex;
-  width: size(955px); //82.327%; //955px от 1366px-103px*2
+  width: size(955px);
   align-items: center;
 
   @include vp-1365 {
@@ -120,12 +120,12 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  width: size(385px);//40.314%; //385px от 955px
+  width: size(385px);
   margin-right: size(70px);
   padding-left: size(115px);
 
   @include vp-1365 {
-    width: size(324px); //47.7876%; //324px от 678px(768px - 45px*2)
+    width: size(324px);
     margin-right: size(30px);
     padding-left: size(139px);
   }
@@ -294,10 +294,10 @@
 }
 
 .main-header__hero-image-wrapper img {
-  width: size(500px); //52.356%; //500px от 955px
+  width: size(500px);
 
   @include vp-1365 {
-    width: size(324px); //47.7876%; //324px от 678px(768px - 45px*2)
+    width: size(324px);
   }
 
   @include vp-767 {
