@@ -1,0 +1,332 @@
+.discounts {
+  padding: size(120px) 0;
+
+  @include vp-1365 {
+    padding: size(100px) 0;
+  }
+
+  @include vp-767 {
+    padding: size(70px) 0;
+  }
+}
+
+.discounts__title {
+  margin: 0;
+  margin-bottom: size(70px);
+
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: size(54px);
+  font-weight: 600;
+  line-height: size(54px);
+  letter-spacing: size(1.62px);
+  text-align: center;
+
+  @include vp-1365 {
+    margin-bottom: size(40px);
+
+    font-size: size(42px);
+    line-height: size(42px);
+    letter-spacing: size(1.26px);
+  }
+
+  @include vp-767 {
+    margin-bottom: size(42px);
+
+    font-size: size(32px);
+    line-height: size(32px);
+    letter-spacing: size(0.96px);
+  }
+}
+
+.discounts__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-auto-flow: row dense;
+  column-gap: size(40px);
+  row-gap: size(40px);
+  width: 100%;
+
+  @include vp-1365 {
+    grid-template-columns: repeat(2, 1fr);column-gap: size(30px);
+    row-gap: size(30px);
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    column-gap: 0;
+    row-gap: 0;
+  }
+}
+
+.discounts__item {
+  width: size(560px);
+
+  @include vp-1365 {
+    width: size(324px);
+  }
+
+  @include vp-767 {
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: size(30px);
+    }
+  }
+}
+
+.discounts__info-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: size(211px);
+  padding: size(23px) size(28px);
+
+  color: $color-resolution-blue;
+  border: size(7px) solid $color-transparent;
+  border-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='560' height='211' viewBox='0 0 560 211' fill='none'%3e%3cpath d='M3.5 3.5H556.5V207.5H3.5V3.5Z' fill='white' stroke='url(%23paint0_linear_1_285)' stroke-width='7'/%3e%3cdefs%3e%3clinearGradient id='paint0_linear_1_285' x1='12.6451' y1='2.46153e-06' x2='85.4174' y2='319.198' gradientUnits='userSpaceOnUse'%3e%3cstop stop-color='%23D10A42'/%3e%3cstop offset='1' stop-color='%2300359F'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+  border-image-slice: 1;
+
+  @include vp-767 {
+    align-items: center;
+    padding: size(38px) size(57px) size(33px);
+  }
+}
+
+.discounts__item h3 {
+  margin: 0;
+  margin-bottom: size(10px);
+
+  font-size: size(26px);
+  font-weight: 700;
+  line-height: size(26px);
+
+  @include vp-1365 {
+    font-size: size(24px);
+    line-height: size(24px);
+  }
+
+  @include vp-767 {
+    font-size: size(22px);
+    line-height: size(22px);
+  }
+}
+
+.discounts__item h4 {
+  margin: 0;
+  margin-bottom: size(25px);
+
+  font-size: size(70px);
+  font-weight: 700;
+  line-height: size(70px);
+
+  @include vp-767 {
+    margin-bottom: size(20px);
+
+    font-size: size(64px);
+    line-height: size(64px);
+  }
+}
+
+.discounts__item p {
+  margin: 0;
+  margin-bottom: size(10px);
+
+  @include vp-767 {
+    font-size: size(14px);
+    line-height: size(22px);
+
+    text-align: center;
+  }
+}
+
+.discounts__item a {
+  position: relative;
+
+  display: inline-block;
+  width: max-content;
+  max-width: 50%;
+  margin-top: auto;
+  margin-bottom: size(8px);
+
+  font-size: size(14px);
+  font-weight: 700;
+  line-height: size(14px);
+  letter-spacing: size(0.7px);
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-resolution-blue;
+
+  user-select: none;
+
+  @include vp-767 {
+    margin-bottom: size(2px);
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: size(-3px);
+    left: 0;
+    right: 0;
+
+    width: 100%;
+    height: size(1px);
+
+    background-color: $color-resolution-blue;
+  }
+}
+
+.discounts__item:not(.discounts__item--disabled-btn) a {
+  &:focus {
+    outline: size(1px) solid $color-resolution-blue;
+    outline-offset: size(10px);
+  }
+
+  &:focus::before {
+    display: none;
+  }
+
+  &:hover {
+    opacity: 0.8;
+    outline: none;
+  }
+
+  &:hover::before {
+    display: block;
+
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+
+  &:active:before {
+    display: block;
+
+    opacity: 1;
+  }
+}
+
+.discounts__item--disabled-btn a {
+  opacity: 0.3;
+
+  cursor: default;
+
+  &::before{
+    opacity: 0.3;
+  }
+}
+
+.discounts__image-wrapper {
+  display: flex;
+  align-items: center;
+
+  background-color: $color-egyptian-blue;
+}
+
+.discounts__image-wrapper img {
+  width: size(280px);
+  height: size(462px);
+
+  object-fit: cover;
+
+  @include vp-1365 {
+    width: size(399px);
+  }
+
+  @include vp-767 {
+    width: size(290px);
+  height: size(330px);
+  }
+}
+
+.discounts__item--dark-background {
+  grid-row: span 2;
+  display: flex;
+
+  @include vp-1365 {
+    grid-column: span 2;
+    grid-row: span 1;
+    width: 100%;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+
+    &:not(:last-child) {
+      margin-bottom: size(40px);
+    }
+  }
+}
+
+.discounts__item--dark-background > .discounts__info-wrapper {
+  width: size(280px);
+  min-height: size(462px);
+  padding: size(33px) size(38px);
+
+  color: $color-default-white;
+
+  background-color: $color-torch-red;
+  border-image: none;
+
+  @include vp-1365 {
+    padding: size(38px) size(38px);
+  }
+
+  @include vp-767 {
+    width: 100%;
+    min-height: size(300px);
+    padding: size(38px) size(43px) size(39px);
+  }
+}
+
+.discounts__item--dark-background h3 {
+    margin-bottom: size(15px);
+
+    color: $color-default-white;
+
+    @include vp-1365 {
+      margin-bottom: size(5px);
+    }
+
+    @include vp-767 {
+      margin-bottom: size(9px);
+    }
+  }
+
+.discounts__item--dark-background h4 {
+  color: $color-default-white;
+}
+
+.discounts__item--dark-background p {
+  letter-spacing: size(1px);
+}
+
+.discounts__item--dark-background a {
+  color: $color-default-white;
+
+  @include vp-1365 {
+    margin-bottom: size(5px);
+  }
+
+  @include vp-767 {
+    margin-bottom: size(2px);
+  }
+
+  &::before {
+    background-color: $color-default-white;
+  }
+}
+
+.discounts__item--dark-background:not(.discounts__item--disabled-btn) a {
+  &:focus {
+    outline: size(1px) solid $color-default-white;
+  }
+
+  &:hover {
+    outline: none;
+  }
+}

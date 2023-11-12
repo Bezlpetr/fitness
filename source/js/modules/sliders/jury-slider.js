@@ -31,6 +31,7 @@ const initJurySlider = () => {
         slidesPerView: 1,
         spaceBetween: 0,
         allowTouchMove: true,
+        initialSlide: 2,
       },
     },
   });
