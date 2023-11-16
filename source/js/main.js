@@ -6,6 +6,7 @@ import {Form} from './modules/form-validate/form';
 import {setVideoPlayButtonListener} from './modules/video/video';
 import {setPriceButtonsListener, setCardsListener} from './modules/price/price';
 import {initJurySlider} from './modules/sliders/jury-slider';
+import {initReviewsSlider} from './modules/sliders/review-slider';
 
 // ---------------------------------
 
@@ -26,6 +27,7 @@ window.addEventListener('DOMContentLoaded', () => {
     setPriceButtonsListener();
     setCardsListener();
     initJurySlider();
+    initReviewsSlider();
     initTabs();
     initAccordions();
     const form = new Form();

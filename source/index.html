@@ -351,13 +351,13 @@
                   </li>
                 </ol>
               </div>
-              <button class="games__jury-slider-button games__jury-slider-button--prev swiper-button-prev" type="button" data-jury-slider-button-prev aria-label="Показать предыдущее изображение тренера.">
-                <svg class="games__jury-slider-button-icon" width="18" height="34">
+              <button class="slider-button games__jury-slider-button games__jury-slider-button--prev swiper-button-prev" type="button" data-jury-slider-button-prev aria-label="Показать предыдущее изображение тренера.">
+                <svg width="18" height="34">
                   <use href="./img/sprite.svg#icon-slider-arrow"></use>
                 </svg>
               </button>
-              <button class="games__jury-slider-button games__jury-slider-button--next swiper-button-next" type="button" data-jury-slider-button-next aria-label="Показать следующее изображение тренера." >
-                <svg class="games__jury-slider-button-icon" width="16" height="32">
+              <button class="slider-button games__jury-slider-button games__jury-slider-button--next swiper-button-next" type="button" data-jury-slider-button-next aria-label="Показать следующее изображение тренера." >
+                <svg width="16" height="32">
                   <use href="./img/sprite.svg#icon-slider-arrow"></use>
                 </svg>
               </button>
@@ -664,6 +664,66 @@
                     </div>
                   </div>
               </div>
+            </div>
+          </div>
+        </section>
+        <section class="reviews">
+          <div class="container reviews__container">
+            <h2 class="reviews__title">Отзывы</h2>
+            <div class="reviews__slider-wrapper">
+              <div class="reviews__slider swiper" data-reviews-slider>
+                <ol class="reviews__list swiper-wrapper">
+                  <li class="reviews__item review swiper-slide">
+                    <blockquote class="review__content-wrapper">
+                      <h3>Анна Орлова</h3>
+                      <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                    </blockquote>
+                    <div class="review__image-wrapper">
+                      <picture>
+                        <source type="image/webp"
+                          srcset="./img/orlova.webp 1x, ./img/orlova@2x.webp 2x">
+                        <img src="./img/orlova.jpg" srcset="./img/orlova@2x.jpg 2x" width="80" height="80" alt="Анна Орлова">
+                      </picture>
+                    </div>
+                  </li>
+                  <li class="reviews__item review swiper-slide">
+                    <blockquote class="review__content-wrapper">
+                      <h3>Петр Безлепкин</h3>
+                      <p>«Не хожу в Supergym уже больше года.Не нравится, что в клубе всегда грязно, тренажеры не обновляют, персонал не дружелюбный. Зал маленький, всегда очереди»</p>
+                    </blockquote>
+                    <div class="review__image-wrapper">
+                      <picture>
+                        <source type="image/webp"
+                          srcset="./img/bezlepkin.webp 1x, ./img/bezlepkin@2x.webp 2x">
+                        <img src="./img/bezlepkin.jpg" srcset="./img/bezlepkin@2x.jpg 2x" width="80" height="80" alt="Петр Безлепкин">
+                      </picture>
+                    </div>
+                  </li>
+                  <li class="reviews__item review swiper-slide">
+                    <blockquote class="review__content-wrapper">
+                      <h3>Иван Иванов</h3>
+                      <p>«Клевый фитнес-центр. Все нравится. Тренеры - супер! Тренажеры - бомба! Персонал - сама любезность!»</p>
+                    </blockquote>
+                    <div class="review__image-wrapper">
+                      <picture>
+                        <source type="image/webp"
+                          srcset="./img/ivanov.webp 1x, ./img/ivanov@2x.webp 2x">
+                        <img src="./img/ivanov.jpg" srcset="./img/ivanov@2x.jpg 2x" width="80" height="80" alt="Иван Иванов">
+                      </picture>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+              <button class="slider-button reviews__slider-button reviews__slider-button--prev swiper-button-prev" type="button" data-reviews-slider-button-prev aria-label="Показать предыдущий отзыв.">
+                <svg width="18" height="34">
+                  <use href="./img/sprite.svg#icon-slider-arrow"></use>
+                </svg>
+              </button>
+              <button class="slider-button reviews__slider-button reviews__slider-button--next swiper-button-next" type="button" data-reviews-slider-button-next aria-label="Показать следующий отзыв." >
+                <svg width="16" height="32">
+                  <use href="./img/sprite.svg#icon-slider-arrow"></use>
+                </svg>
+              </button>
             </div>
           </div>
         </section>
