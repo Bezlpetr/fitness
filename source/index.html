@@ -53,7 +53,7 @@
           </div>
         </div>
       </header>
-      <main>
+      <main class="main-page">
         <section class="gym">
           <div class="container gym__container">
             <div class="gym__text-content-wrapper">
@@ -727,6 +727,53 @@
             </div>
           </div>
         </section>
+        <div class="container container--columns">
+          <section class="workout">
+            <h2 class="workout__title">Бесплатное занятие</h2>
+            <div class="workout__form-wrapper" data-form-validate data-callback="base" data-parent-validate="base" data-message-base="Заполните все данные" data-message-extra="Неверный ввод данных">
+              <form action="https://echo.htmlacademy.ru/" method="post">
+                <div class="workout__input-wrapper custom-input" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно" data-message-extra="Поле некорректно" data-required>
+                  <label for="name">Имя</label>
+                  <input type="text" name="name" id="name" placeholder="Имя" required >
+                </div>
+                <div class="workout__input-wrapper custom-input" data-validate-type="phone" data-message-base="Поле обязательно" data-message-extra="Поле некорректно"  data-required>
+                  <label for="phone">Телефон</label>
+                  <input type="tel" name="phone" id="phone" placeholder="Телефон" required >
+                </div>
+                <div class="workout__button-wrapper">
+                  <button type="submit">Отправить</button>
+                </div>
+              </form>
+            </div>
+          </section>
+          <section class="contacts">
+            <h2 class="contacts__title">Контакты</h2>
+            <address class="contacts__info">
+              <dl class="contacts__list">
+                <div class="contacts__item-wrapper">
+                  <dt class="contacts__item">Адрес:</dt>
+                  <dd class="contacts__description">г. Омск, ул. 60 лет Октября, 7</dd>
+                </div>
+                <div  class="contacts__item-wrapper">
+                  <dt class="contacts__item">График работы:</dt>
+                  <dd class="contacts__description">Пн-Вс: с 8:00 до 22:00</dd>
+                </div>
+                <div class="contacts__item-wrapper">
+                  <dt class="contacts__item">Телефон:</dt>
+                  <dd class="contacts__description">
+                    <a class="contacts__link" href="tel:+78005555555">8-800-555-55-55</a>
+                  </dd>
+                </div>
+                <div class="contacts__item-wrapper">
+                  <dt class="contacts__item">Email:</dt>
+                  <dd class="contacts__description">
+                    <a class="contacts__link" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+                  </dd>
+                </div>
+              </dl>
+            </address>
+          </section>
+        </div>
       </main>
       <footer>
         <div class="container"></div>

@@ -1,0 +1,200 @@
+.workout {
+  padding: size(60px) size(170px)  size(60px) size(103px);
+
+  background-color: $color-sapphire;
+
+  @include vp-1365 {
+    padding: size(100px) size(133px);
+  }
+
+  @include vp-767 {
+    padding: size(70px) size(15px);
+  }
+}
+
+.workout__title {
+  margin: 0;
+  margin-bottom: size(28px);
+
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: size(54px);
+  font-weight: 600;
+  line-height: size(54px);
+  letter-spacing: size(1.62px);
+  color: $color-default-white;
+
+  @include vp-1365 {
+    margin-bottom: size(35px);
+
+    font-size: size(42px);
+    line-height: size(42px);
+    letter-spacing: size(1.26px);
+  }
+
+  @include vp-767 {
+    margin-bottom: size(40px);
+
+    font-size: size(32px);
+    line-height: size(32px);
+    letter-spacing: size(0.96px);
+  }
+}
+
+.workout__form-wrapper form {
+  display: grid;
+  grid-template-columns: repeat(2, size(190px));
+  column-gap: size(30px);
+  row-gap: size(38px);
+
+  @include vp-1365 {
+    grid-template-columns: repeat(2, size(221px));
+    column-gap: size(60px);
+    row-gap: size(30px);
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+  }
+}
+
+.workout__input-wrapper {
+  width: 100%;
+  padding: 0;
+
+  @include vp-1365 {
+    margin-top: (-7px);
+  }
+
+  @include vp-767 {
+    margin: 0;
+    margin-top: (-5px);
+
+    margin-bottom: size(35px);
+  }
+}
+
+.workout__input-wrapper label {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+
+.workout__input-wrapper input {
+  width: 100%;
+  padding: size(6px) size(10px);
+
+  font-size: size(14px);
+  font-weight: 400;
+  line-height: size(14px);
+  color: $color-default-white;
+
+  background-color: $color-sapphire;
+  border: size(1px) solid $color-sapphire;
+  border-bottom: size(1px) solid $color-light-slate-grey;
+  cursor: pointer;
+
+  @include vp-1365 {
+    padding: size(5px) size(10px);
+
+    font-size: size(16px);
+    font-weight: 300;
+    line-height: size(24px);
+  }
+
+  @include vp-767 {
+    padding: size(4px);
+
+    font-size: size(14px);
+    line-height: size(22px);
+  }
+
+  &::placeholder {
+    color: $color-default-white;
+  }
+
+  &:not(:disabled) {
+    &:hover {
+      border-bottom: size(1px) solid $color-default-white;
+    }
+
+    &:focus,
+    &:active {
+      border: size(1px) solid $color-default-white;
+      outline: none;
+    }
+  }
+
+  &:disabled {
+    border-bottom: size(1px) solid $color-white-opacity30;
+    cursor: default;
+
+    &::placeholder {
+      color: $color-white-opacity40;
+    }
+  }
+}
+
+.workout__button-wrapper {
+  grid-column: span 2;
+  width: 100%;
+
+  @include vp-767 {
+    margin-top: size(5px);
+  }
+}
+
+.workout__button-wrapper button {
+  width: 100%;
+  padding: size(25px) size(54px);
+
+  font-size: size(12px);
+  font-weight: 700;
+  line-height: size(12px);
+  letter-spacing: size(0.6px);
+  text-transform: uppercase;
+  color: $color-default-white;
+
+  background-color: $color-sapphire;
+  border: size(2px) solid $color-default-white;
+  cursor: pointer;
+
+  @include vp-1365 {
+    padding: size(19px) size(54px);
+  }
+
+  @include vp-767 {
+    padding: size(18px);
+  }
+
+  &:not(:disabled) {
+    @include hover-focus {
+      color: $color-egyptian-blue;
+
+      background-color: $color-default-white;
+      outline: none;
+      cursor: pointer;
+    }
+
+    @include active {
+      color: $color-sapphire;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+}

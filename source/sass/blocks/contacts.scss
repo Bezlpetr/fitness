@@ -1,0 +1,160 @@
+.contacts {
+  padding: size(60px) size(123px) size(60px) size(120px);
+
+  border-top: size(1px) solid $color-light-slate-grey;
+
+  @include vp-1365 {
+    padding: size(104px) size(133px) size(100px);
+
+    border: none;
+  }
+
+  @include vp-767 {
+    padding: size(70px) size(15px);
+  }
+}
+
+.contacts__title {
+  margin: 0;
+  margin-bottom: size(40px);
+
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: size(54px);
+  font-weight: 600;
+  line-height: size(54px);
+  letter-spacing: size(1.62px);
+
+  @include vp-1365 {
+    margin-bottom: size(40px);
+
+    font-size: size(42px);
+    line-height: size(42px);
+    letter-spacing: size(1.26px);
+  }
+
+  @include vp-767 {
+    margin-bottom: size(38px);
+
+    font-size: size(32px);
+    line-height: size(32px);
+    letter-spacing: size(0.96px);
+  }
+}
+
+.contacts__info {
+  margin: 0;
+
+  font-style: normal;
+}
+
+.contacts__list {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: size(170px) size(150px);
+  grid-template-rows: repeat(2, auto);
+  grid-auto-flow: row dense;
+  column-gap: size(120px);
+  row-gap: size(15px);
+  margin: 0;
+  width: size(440px);
+
+
+  @include vp-1365 {
+    grid-template-columns: size(171px) size(191px);;
+    column-gap: size(141px);
+    row-gap: size(27px);
+    width: 100%;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    row-gap: size(27px);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: size(1px);
+    height: 100%;
+
+    background-color: $color-light-slate-grey;
+
+    @include vp-767 {
+      display: none;
+    }
+  }
+}
+
+.contacts__item-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  &:nth-child(2) {
+    grid-column: 1/2;
+  }
+}
+
+.contacts__item {
+  margin-bottom: size(5px);
+
+  font-size: size(24px);
+  font-weight: 400;
+  line-height: size(24px);
+
+  @include vp-1365 {
+    margin-bottom: size(11px);
+
+    font-size: size(22px);
+    line-height: size(22px);
+  }
+
+  @include vp-767 {
+    margin-bottom: size(12px);
+
+    font-size: size(20px);
+    line-height: size(20px);
+  }
+}
+
+.contacts__description {
+  margin: 0;
+
+  font-size: size(14px);
+  font-weight: 400;
+  line-height: size(22px);
+
+  @include vp-767 {
+    line-height: size(20px);
+  }
+}
+
+.contacts__link {
+
+  border: size(1px) solid $color-default-white;
+  user-select: none;
+
+  &:hover {
+    opacity: 0.8;
+
+    border-bottom: size(1px) solid $color-sapphire-opacity80;
+  }
+
+  &:focus {
+    opacity: 1;
+
+    border: size(1px) solid $color-sapphire;
+    outline: none;
+  }
+
+  &:active {
+    border: size(1px) solid $color-default-white;
+    border-bottom: size(1px) solid $color-sapphire;
+  }
+}
