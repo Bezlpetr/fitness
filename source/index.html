@@ -21,7 +21,7 @@
           <div class="main-header__logo-phone-wrapper">
             <a class="main-header__logo-link">
               <div class="main-header__logo-link-image-wrapper">
-                <img src="./img/svg/logo.svg" alt="Логотип фитнес-центра SuperGym">
+                <img src="./img/svg/logo.svg" width="120" height="23" alt="Логотип фитнес-центра SuperGym">
               </div>
             </a>
             <address class="main-header__address">
@@ -775,8 +775,65 @@
           </section>
         </div>
       </main>
-      <footer>
-        <div class="container"></div>
+      <footer class="main-footer">
+        <div class="container main-footer__container">
+          <a class="main-footer__logo-link">
+            <div class="main-footer__logo-link-image-wrapper">
+              <picture>
+                <source type="image/jpeg" media="(max-width: 767px)"
+                  srcset="./img/svg/logo-footer-mobile.svg">
+                <img src="./img/svg/logo.svg" width="120" height="23" alt="Логотип фитнес-центра SuperGym">
+              </picture>
+            </div>
+          </a>
+          <nav class="main-footer__navigation">
+            <!-- Для отключения кнопки установи класс main-footer__navigation-link--disabled  -->
+            <ul class="main-footer__navigation-list">
+              <li class="main-footer__navigation-item">
+                <a class="main-footer__navigation-link" href="#">Услуги</a>
+              </li>
+              <li class="main-footer__navigation-item">
+                <a class="main-footer__navigation-link" href="#">Абонементы</a>
+              </li>
+              <li class="main-footer__navigation-item">
+                <a class="main-footer__navigation-link" href="#">Акции</a>
+              </li>
+              <li class="main-footer__navigation-item">
+                <a class="main-footer__navigation-link" href="#">Тренеры</a>
+              </li>
+              <li class="main-footer__navigation-item">
+                <a class="main-footer__navigation-link" href="#">Расписание</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- Для отключения кнопки установи класс main-footer__social-link--disabled  -->
+          <ul class="main-footer__social-list">
+            <li class="main-footer__social-item">
+              <a class="main-footer__social-link" href="#" aria-label="SuperGym в Вконтакте.">
+                <svg width="13" height="8" fill="none">
+                  <use href="./img/sprite.svg#icon-vk">
+                  </use>
+                </svg>
+              </a>
+            </li>
+            <li class="main-footer__social-item">
+              <a class="main-footer__social-link " href="#" aria-label="SuperGym в Одноклассниках.">
+                <svg width="10" height="17" fill="none">
+                  <use href="./img/sprite.svg#icon-ok">
+                  </use>
+                </svg>
+              </a>
+            </li>
+            <li class="main-footer__social-item">
+              <a class="main-footer__social-link" href="#" aria-label="SuperGym в Reddit.">
+                <svg width="15" height="15" fill="none">
+                  <use href="./img/sprite.svg#icon-reddit">
+                  </use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </footer>
     </div>
 
