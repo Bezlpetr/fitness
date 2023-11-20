@@ -1,6 +1,5 @@
 .faq {
   padding: size(120px) 0;
-
   background-color: $color-ghost-white;
 
   @include vp-1365 {
@@ -16,7 +15,6 @@
 .faq__title {
   margin: 0;
   margin-bottom: size(51px);
-
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: size(54px);
   font-weight: 600;
@@ -24,8 +22,7 @@
   letter-spacing: size(1.62px);
 
   @include vp-1365 {
-    margin-bottom: size(50px);
-
+    margin-bottom: size(51px);
     font-size: size(42px);
     line-height: size(42px);
     letter-spacing: size(1.26px);
@@ -34,7 +31,6 @@
 
   @include vp-767 {
     margin-bottom: size(37px);
-
     font-size: size(32px);
     line-height: size(32px);
     letter-spacing: size(0.96px);
@@ -49,7 +45,7 @@
   @include vp-1365 {
     display: flex;
     flex-direction: column;
-    row-gap: size(38px);
+    row-gap: size(40px);
   }
 
   @include vp-767 {
@@ -77,19 +73,16 @@
 
 .faq__tabs-contol {
   padding: size(17px);
-
   font-size: size(18px);
   font-weight: 400;
   line-height: size(18px);
   color: $color-sapphire;
-
   background-color: $color-default-white;
   border: size(1px) solid $color-sapphire-opacity20;
   cursor: pointer;
 
   @include vp-767 {
     padding: size(13px);
-
     font-size: size(16px);
     line-height: size(16px);
   }
@@ -104,21 +97,19 @@
 
   &:not(:disabled) {
     @include hover-focus {
-    border: size(1px) solid $color-sapphire;
-    outline: none;
+      border: size(1px) solid $color-sapphire;
+      outline: none;
     }
   }
 
   &:disabled {
     color: $color-link-water;
-
     cursor: default;
   }
 }
 
 .faq__tabs-contol.is-active {
   color: $color-default-white;
-
   background-image: $gradient-button;
   border: size(1px) solid $color-transparent;
   border-image: $gradient-button;
@@ -140,9 +131,8 @@
 
 .faq__accordion-element {
   position: relative;
-
   padding-top: size(25px);
-  padding-bottom: size(26px);
+  padding-bottom: size(25px);
 
   @include vp-767 {
     padding-top: size(22px);
@@ -155,10 +145,8 @@
     top: 0;
     left: 0;
     right: 0;
-
     width: 100%;
     height: size(1px);
-
     background-color: $color-resolution-blue-opacity20;
   }
 
@@ -168,10 +156,8 @@
     bottom: 0;
     left: 0;
     right: 0;
-
     width: 100%;
     height: size(1px);
-
     background-color: $color-resolution-blue-opacity20;
   }
 }
@@ -182,12 +168,10 @@
   align-items: center;
   width: 100%;
   padding: 0;
-
   font-size: size(24px);
   font-weight: 400;
   line-height: size(24px);
   color: $color-sapphire;
-
   background-color: $color-ghost-white;
   border: none;
 
@@ -202,17 +186,17 @@
   }
 
   &:not(:disabled) {
-     @include hover-focus {
+    @include hover-focus {
       outline: none;
       cursor: pointer;
 
-    & .faq__accordion-button-icon {
-      background-color: $color-resolution-blue;
+      & .faq__accordion-button-icon {
+        background-color: $color-resolution-blue;
       }
 
-    & .faq__accordion-button-icon::after,
-    & .faq__accordion-button-icon::before {
-      background-color: $color-ghost-white;
+      & .faq__accordion-button-icon::after,
+      & .faq__accordion-button-icon::before {
+        background-color: $color-ghost-white;
       }
     }
   }
@@ -224,7 +208,6 @@
 
 .faq__accordion-button-text {
   width: size(660px);
-
   text-align: left;
 
   @include vp-1365 {
@@ -254,16 +237,14 @@
 
 .faq__accordion-button-icon {
   position: relative;
-
   display: block;
   width: size(40px);
   height: size(40px);
   box-sizing: border-box;
-
   border: size(1px) solid $color-resolution-blue;
   border-radius: 50%;
 
-  @include vp-767  {
+  @include vp-767 {
     width: size(30px);
     height: size(30px);
   }
@@ -274,7 +255,6 @@
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-
     width: size(20px);
     height: size(1px);
     background-color: $color-resolution-blue;
@@ -290,7 +270,6 @@
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-
     width: size(1px);
     height: size(20px);
     background-color: $color-resolution-blue;
@@ -316,7 +295,6 @@
 .faq__accordion-content-wrapper p {
   width: size(660px);
   margin: 0;
-
   font-size: size(18px);
 
   @include vp-1365 {
@@ -325,7 +303,6 @@
 
   @include vp-767 {
     width: size(275px);
-
     font-size: size(16px);
     line-height: size(20px);
   }

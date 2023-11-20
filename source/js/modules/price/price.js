@@ -1,10 +1,10 @@
-const priceButtonElements = document.querySelectorAll('.price__month-button');
-const priceElements = document.querySelectorAll('.card__price');
-const cardElements = document.querySelectorAll('.card');
+const priceButtonElements = document.querySelectorAll('[data-month-button]');
+const priceElements = document.querySelectorAll('[data-price]');
+const cardElements = document.querySelectorAll('[data-card]');
 
 const onPriceButtonClick = (evt) => {
   if (!evt.target.classList.contains('is-active')) {
-    document.querySelector('.price__month-button.is-active').classList.remove('is-active');
+    document.querySelector('[data-month-button].is-active').classList.remove('is-active');
 
     evt.target.classList.add('is-active');
 
@@ -22,7 +22,7 @@ const onPriceButtonClick = (evt) => {
 
 const onCardClick = (evt) => {
   if (!evt.currentTarget.classList.contains('is-active')) {
-    document.querySelector('.card.is-active').classList.remove('is-active');
+    document.querySelector('[data-card].is-active').classList.remove('is-active');
 
     evt.currentTarget.classList.add('is-active');
   }

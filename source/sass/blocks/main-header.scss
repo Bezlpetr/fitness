@@ -1,6 +1,5 @@
 .main-header {
   padding-bottom: size(120px);
-
   background: $gradient-hero;
 
   @include vp-1365 {
@@ -28,13 +27,11 @@
   display: block;
   padding: size(9px);
   margin-right: size(-10px);
-
   font-size: size(26px);
   font-weight: 700;
   line-height: size(26px);
   font-style: normal;
   color: $color-default-white;
-
   border: size(1px) solid  $color-transparent;
 
   @include vp-1365 {
@@ -45,7 +42,6 @@
   @include vp-767 {
     padding: size(5px);
     margin-right: size(-6px);
-
     font-size: size(22px);
     line-height: size(22px);
   }
@@ -59,40 +55,36 @@
     @include active {
       color: $color-sapphire;
       text-decoration: underline;
-
       border: size(1px) solid  $color-transparent;
     }
   }
 
   &--disabled {
     color: $color-ghost-white;
-
     opacity: 0.5;
     cursor: default;
   }
 }
 
-.main-header__logo-link {
-  display: block;
+.main-header__logo-link-image-wrapper{
   padding: size(10px);
-
   margin-left: size(-10px);
-
   background-color: $color-resolution-blue;
 
   @include vp-767 {
     padding: size(6px);
-
     margin-left: size(-6px);
     margin-top: size(-6px);
   }
 }
 
-.main-header__logo-link-image-wrapper img{
+.main-header__logo-link-image-wrapper img {
   width: size(118px);
+  height: size(26px);
 
   @include vp-1365 {
     width: size(108px);
+    height: size(24px);
   }
 
   @include vp-767 {
@@ -117,7 +109,6 @@
 
 .main-header__hero-info-wrapper {
   position: relative;
-
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -127,17 +118,17 @@
 
   @include vp-1365 {
     width: size(324px);
-    margin-right: size(30px);
     padding-left: size(139px);
+    margin-right: size(30px);
   }
 
   @include vp-767 {
     display: grid;
     width: auto;
     grid-template-areas:
-    "list city"
-    "list title"
-    "btn btn";
+      "list city"
+      "list title"
+      "btn btn";
     grid-template-columns: size(128px) auto;
     margin-right: 0;
     padding-left: 0;
@@ -146,10 +137,8 @@
 
 .main-header__hero-title {
   order: 2;
-
   margin: 0;
   margin-bottom: size(50px);
-
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: size(92px);
   font-weight: 800;
@@ -168,17 +157,15 @@
   @include vp-767 {
     grid-area: title;
     margin-bottom: 0;
-
-    font-size: size(67px);
+    font-size: size(62px);
     line-height: size(70px);
+    letter-spacing: size(1.86px);
   }
 }
 
 .main-header__hero-city {
   order: 1;
-
   margin-bottom: size(10px);
-
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: size(54px);
   font-weight: 600;
@@ -196,7 +183,6 @@
   @include vp-767 {
     grid-area: city;
     margin-bottom: size(14px);
-
     font-size: size(32px);
     line-height: size(32px);
     letter-spacing: size(0.96px);
@@ -209,18 +195,14 @@
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-
   padding: 0;
   margin: 0;
-
   text-align: right;
-
   list-style: none;
 
   @include vp-767 {
     position: static;
     transform: none;
-
     grid-area: list;
     padding-right: size(15px);
   }
@@ -231,7 +213,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: size(22px);
-  color:  $color-default-white;
+  color: $color-default-white;
 
   @include vp-767 {
     line-height: size(20px);
@@ -240,25 +222,21 @@
 
 .main-header__hero-button {
   order: 3;
-
   display: flex;
   justify-content: center;
   align-items: center;
   padding: size(27px) size(56px);
-
   font-size: size(12px);
   font-weight: 700;
   line-height: size(12px);
   letter-spacing: size(0.6px);
   text-transform: uppercase;
   color: $color-default-white;
-
   border: size(2px) solid $color-default-white;
 
   @include vp-1365 {
     width: 100%;
     padding: size(22px);
-
     font-weight: 400;
   }
 
@@ -268,14 +246,12 @@
     max-width: none;
     padding: size(20px);
     margin-top: size(60px);
-
     font-weight: 700;
   }
 
   &:not(.main-header__hero-button--disabled) {
     @include hover-focus {
       color: $color-egyptian-blue;
-
       background-color: $color-default-white;
       outline: none;
     }
@@ -287,7 +263,6 @@
 
   &--disabled {
     color: $color-default-white;
-
     background-color: $color-transparent;
     opacity: 0.5;
     cursor: default;
@@ -297,6 +272,8 @@
 .main-header__hero-image-wrapper img {
   width: size(500px);
 
+  object-fit: cover;
+
   @include vp-1365 {
     width: size(324px);
   }
@@ -304,8 +281,4 @@
   @include vp-767 {
     display: none;
   }
-}
-
-.main-header__hero-image-wrapper img {
-  object-fit: cover;
 }

@@ -20,21 +20,19 @@
 
   @include vp-767 {
     flex-direction: column;
-    margin-bottom: size(70px);
+    margin-bottom: size(71px);
   }
 }
 
 .games__promo-info-wrapper {
   display: grid;
   grid-template-areas:
-  "title beginning"
-  "description description"
-  "button button";
+    "title beginning"
+    "description description"
+    "button button";
   width: size(500px);
   padding: size(80px);
-
   color: $color-default-white;
-
   background-color: $color-torch-red;
 
   @include vp-1365 {
@@ -44,14 +42,13 @@
 
   @include vp-767 {
     width: 100%;
-    padding: size(40px);
+    padding: size(39px) size(40px) size(40px);
   }
 }
 
 .games__title {
   margin: 0;
   grid-area: title;
-
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: size(82px);
   font-weight: 600;
@@ -63,7 +60,6 @@
     font-size: size(48px);
     line-height: size(46px);
     letter-spacing: size(1.44px);
-
     margin-right: size(40px);
   }
 
@@ -76,7 +72,6 @@
   grid-area: description;
   margin: 0;
   margin-bottom: size(55px);
-
   font-size: size(18px);
 
   @include vp-1365 {
@@ -86,7 +81,6 @@
   @include vp-767 {
     padding-right: size(39px);
     margin-bottom: size(20px);
-
     font-size: size(16px);
     line-height: size(20px);
   }
@@ -116,7 +110,6 @@
 
   @include vp-767 {
     margin-bottom: size(3px);
-
     font-size: size(16px);
     line-height: size(20px);
   }
@@ -124,9 +117,7 @@
 
 .games__beginning-definition {
   position: relative;
-
   margin: 0;
-
   font-size: size(40px);
   font-weight: 700;
   line-height: size(40px);
@@ -142,10 +133,8 @@
     top: size(-5px);
     left: 0;
     right: 0;
-
     width: 100%;
     height: size(1px);
-
     background-color: $color-default-white;
 
     @include vp-1365 {
@@ -154,7 +143,7 @@
   }
 }
 
-.games_beginning-date-wrapper {
+.games__beginning-date-wrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -175,14 +164,12 @@
   justify-content: center;
   align-items: center;
   padding: size(25px);
-
   font-size: size(12px);
   font-weight: 700;
   line-height: size(12px);
   letter-spacing: size(0.6px);
   text-transform: uppercase;
   color: $color-default-white;
-
   border: size(2px) solid $color-default-white;
 
   @include vp-1365 {
@@ -192,7 +179,6 @@
   &:not(.games__button--disabled) {
     @include hover-focus {
       color: $color-egyptian-blue;
-
       background-color: $color-default-white;
       outline: none;
     }
@@ -204,7 +190,6 @@
 
   &--disabled {
     color: $color-default-white;
-
     background-color: $color-transparent;
     opacity: 0.5;
     cursor: default;
@@ -218,7 +203,6 @@
 .games__promo-image-wrapper img {
   width: size(660px);
   height: size(500px);
-
   object-fit: cover;
 
   @include vp-1365 {
@@ -235,7 +219,6 @@
 .games__subtitle {
   margin: 0;
   margin-bottom: size(45px);
-
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: size(54px);
   font-weight: 600;
@@ -244,7 +227,6 @@
 
   @include vp-1365 {
     margin-bottom: size(40px);
-
     font-size: size(42px);
     line-height: size(42px);
     letter-spacing: size(1.26px);
@@ -253,7 +235,6 @@
 
   @include vp-767 {
     margin-bottom: size(42px);
-
     font-size: size(32px);
     line-height: size(32px);
     letter-spacing: size(0.96px);
@@ -279,7 +260,6 @@
 .games__jury-list {
   padding: 0;
   margin: 0;
-
   list-style: none;
 }
 

@@ -1,7 +1,7 @@
 const posterElement =
-document.querySelector('.gym__video-poster');
-const videoPlayButtonElement = document.querySelector('.gym__video-play-button');
-const videoElement = document.querySelector('.gym__video');
+document.querySelector('[data-video-poster]');
+const videoPlayButtonElement = document.querySelector('[data-video-play-button]');
+const videoElement = document.querySelector('[data-video]');
 
 const onButtonVideoPlayClick = () => {
   if (videoElement) {

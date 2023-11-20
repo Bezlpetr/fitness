@@ -2,27 +2,13 @@
   display: inline-flex;
   padding: size(27px);
 
-  // font-family: $ff-placeholder;
   color: $color-sapphire;
-
   background-color: inherit;
   border: size(1px) solid $color-sapphire;
   cursor: pointer;
   user-select: none;
 
-  // transition: opacity $trans-default;
-
-  // &--red {
-  //   background-color: $color-torch-red;
-  // }
-
-  // &:disabled {
-  //   opacity: 0.5;
-
-  //   pointer-events: none;
-  // }
-
-  // @include hover-focus {
-  //   opacity: 0.8;
-  // }
+  &:disabled {
+    pointer-events: none;
+  }
 }

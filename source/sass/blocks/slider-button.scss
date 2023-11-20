@@ -1,6 +1,5 @@
 .slider-button {
   position: absolute;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,9 +8,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-
   color: $color-sapphire;
-
   background-color: $color-transparent;
   border-radius: 50%;
   border: none;
@@ -22,16 +19,15 @@
     height: size(34px);
   }
 
-  &:not(:disabled){
+  &:not(:disabled) {
     @include hover-focus {
-    border: size(1px) solid $color-sapphire;
-    outline: none;
+      border: size(1px) solid $color-sapphire;
+      outline: none;
     }
 
-  @include active {
-    color: $color-default-white;
-
-    background-color: $color-sapphire;
+    @include active {
+      color: $color-default-white;
+      background-color: $color-sapphire;
     }
   }
 

@@ -2,9 +2,7 @@
   width: size(360px);
   box-sizing: border-box;
   padding: size(7px);
-
   background-color: $color-default-white;
-
   cursor: pointer;
 
   @include vp-1365 {
@@ -26,13 +24,11 @@
 
 .card__wrapper {
   position: relative;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   padding: size(58px);
-
   background-color: $color-default-white;
 
   @include vp-1365 {
@@ -40,28 +36,25 @@
   }
 
   @include vp-767 {
-    padding: size(45px) size(50px);
+    padding: size(43px) size(50px);
   }
 }
 
 .card__title {
   margin: 0;
   margin-bottom: size(7px);
-
   font-size: size(26px);
   font-weight: 700;
   line-height: size(26px);
 
   @include vp-1365 {
     margin-bottom: size(18px);
-
     font-size: size(24px);
     line-height: size(24px);
   }
 
   @include vp-767 {
     margin-bottom: size(15px);
-
     font-size: size(22px);
     line-height: size(22px);
   }
@@ -70,7 +63,6 @@
 .card__subtitle {
   margin: 0;
   margin-bottom: size(70px);
-
   font-weight: 300;
 
   @include vp-1365 {
@@ -78,8 +70,7 @@
   }
 
   @include vp-767 {
-    margin-bottom: size(62px);
-
+    margin-bottom: size(65px);
     font-size: size(14px);
     line-height: size(22px);
   }
@@ -87,11 +78,9 @@
 
 .card__price {
   z-index: 2;
-
   display: flex;
   align-items: center;
   margin-bottom: size(35px);
-
   font-size: size(60px);
   font-weight: 700;
   line-height: size(90px);
@@ -102,8 +91,7 @@
   }
 
   @include vp-767 {
-    margin-bottom: size(24px);
-
+    margin-bottom: size(22px);
     font-size: size(48px);
     line-height: size(72px);
   }
@@ -124,11 +112,10 @@
 .card__price-shadow {
   position: absolute;
   content: "";
-  top: size(138px);
+  top: size(128px);
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
-
   font-size: size(100px);
   font-weight: 700;
   line-height: size(150px);
@@ -137,7 +124,6 @@
 
   @include vp-767 {
     top: size(120px);
-
     font-size: size(80px);
     line-height: size(120px);
   }
@@ -145,7 +131,6 @@
 
 .card__button {
   z-index: 3;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -153,41 +138,36 @@
   min-height: size(66px);
   padding: size(25px);
   box-sizing: border-box;
-
   font-size: size(12px);
   font-weight: 700;
   line-height: size(12px);
   letter-spacing: size(0.6px);
   text-transform: uppercase;
-
   border: size(2px) solid $color-sapphire;
 
   @include vp-1365 {
     min-height: size(56px);
     padding: size(20px);
   }
+}
 
-  &:not(.card__button--disabled) {
-    @include hover-focus {
+.card__button:not(.card__button--disabled) {
+  @include hover-focus {
     color: $color-default-white;
-
     background-image: $gradient-button;
     background-origin: border-box;
     border-color: $color-transparent;
     outline: none;
-    }
   }
+}
 
-  &--disabled {
-    opacity: 0.3;
-
-    cursor: default;
-  }
+.card__button--disabled {
+  opacity: 0.3;
+  cursor: default;
 }
 
 .card:hover .card__button:not(.card__button--disabled) {
   color: $color-default-white;
-
   background-image: $gradient-button;
   background-origin: border-box;
   border-color: $color-transparent;
@@ -199,18 +179,16 @@
 
 .card.is-active {
   background-image: $gradient-card;
-
   cursor: default;
+}
 
-  & .card__button:not(.card__button--disabled) {
-    color: $color-default-white;
+.card.is-active .card__button:not(.card__button--disabled) {
+  color: $color-default-white;
+  background-image: $gradient-button;
+  background-origin: border-box;
+  border-color: $color-transparent;
+}
 
-    background-image: $gradient-button;
-    background-origin: border-box;
-    border-color: $color-transparent;
-  }
-
-  & .card__button:not(.card__button--disabled):active {
-    color: $color-white-opacity70;
-  }
+.card.is-active .card__button:not(.card__button--disabled):active {
+  color: $color-white-opacity70;
 }
